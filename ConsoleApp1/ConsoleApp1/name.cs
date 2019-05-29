@@ -10,10 +10,26 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter Name");
-            String name = Console.ReadLine();
-            Console.WriteLine("Hello");
-            Console.WriteLine("My name:" + name);
+            Run r = new Run();
+            r.display();
+
+        }
+    }
+    class Run
+    {
+        public void display()
+        {
+            int n1, n2, s, m;
+            double d;
+            Console.WriteLine("Enter two numbers");
+            n1 = Convert.ToInt32(Console.ReadLine());
+            n2 = Convert.ToInt32(Console.ReadLine());
+            s = n1 + n2;
+            m = n1 * n2;
+            d = n1 / n2;
+            Console.WriteLine("Sum of two numbers:" + s);
+            Console.WriteLine("product of two numbers:" + m);
+            Console.WriteLine("Division of two numbers:" + d);
             Console.ReadKey();
         }
     }
