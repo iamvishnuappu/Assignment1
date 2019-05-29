@@ -19,17 +19,17 @@ namespace ConsoleApp1
     {
         public void display()
         {
-            int n1, n2, t;
-            double d;
-            Console.WriteLine("Enter two numbers");
+            int n1,m=1;
+            
+            Console.WriteLine("Enter number");
             n1 = Convert.ToInt32(Console.ReadLine());
-            n2 = Convert.ToInt32(Console.ReadLine());
-            t = n1;
-            n1 = n2;
-            n2 = t;
-            Console.WriteLine("Swapped numbers:" );
-            Console.WriteLine("A:" + n1);
-            Console.WriteLine("B:" + n2);
+            Console.WriteLine("MULTIPLICATION TABLE OF " + n1 + "\n");
+            for (int i = 1; i <= 10; i++)
+            {
+                m = i * n1;
+                
+                Console.WriteLine(i + "*" + n1 + "=" + m);
+            }
             Console.ReadKey();
         }
     }
