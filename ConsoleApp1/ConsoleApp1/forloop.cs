@@ -19,17 +19,12 @@ namespace ConsoleApp1
     {
         public void display()
         {
-            int n1,m=1;
-            
-            Console.WriteLine("Enter number");
-            n1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("MULTIPLICATION TABLE OF " + n1 + "\n");
-            for (int i = 1; i <= 10; i++)
-            {
-                m = i * n1;
-                
-                Console.WriteLine(i + "*" + n1 + "=" + m);
-            }
+            int i;
+            int s = 0;
+            for (i = 1; i <= 10; i++)
+                s += i;
+
+            Console.WriteLine("Sum:" + s);
             Console.ReadKey();
         }
     }

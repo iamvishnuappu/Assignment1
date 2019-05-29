@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class Program
+    class Assignment
     {
         static void Main(string[] args)
         {
@@ -19,17 +19,14 @@ namespace ConsoleApp1
     {
         public void display()
         {
-            int n1,m=1;
-            
-            Console.WriteLine("Enter number");
-            n1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("MULTIPLICATION TABLE OF " + n1 + "\n");
-            for (int i = 1; i <= 10; i++)
+            int i=0;
+            int s = 0;
+            while (i <= 10)
             {
-                m = i * n1;
-                
-                Console.WriteLine(i + "*" + n1 + "=" + m);
+                s += i;
+                i++;
             }
+            Console.WriteLine("Sum using while:" + s);
             Console.ReadKey();
         }
     }
