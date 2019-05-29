@@ -19,17 +19,17 @@ namespace ConsoleApp1
     {
         public void display()
         {
-            int n1,m=1;
-            
-            Console.WriteLine("Enter 3 number");
-			n1 = Convert.ToInt32(Console.ReadLine());
-			n2 = Convert.ToInt32(Console.ReadLine());
-            n3 = Convert.ToInt32(Console.ReadLine());
-            
-                m = n2 * n1 * n3;
-                
-                Console.WriteLine("product="+m);
-            
+            int n1, n2;
+            int s = 0;
+
+            Console.WriteLine("Enter number");
+            n1 = Convert.ToInt32(Console.ReadLine());
+            if ((n1 >= 20) && (n1 <= 100))
+            {
+                Console.WriteLine("Number is between 20 and 100");
+            }
+            else
+                Console.WriteLine("Number is not between 20 and 100");
             Console.ReadKey();
         }
     }
